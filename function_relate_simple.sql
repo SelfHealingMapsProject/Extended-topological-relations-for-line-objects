@@ -8,11 +8,3 @@ END;
 $$
 STRICT
 LANGUAGE plpgsql IMMUTABLE;
-
-
-
-
-SELECT replace(replace(replace('F101F1012', '1', 'T'), '2', 'T'), '0', 'T');
-SELECT translate('F101F1012', '012', 'TTT');
-
-SELECT relate_simple(a.geom, b.geom) FROM victoria_ways a, victoria_ways b WHERE NOT st_disjoint(a.geom, b.geom) LIMIT 10;
