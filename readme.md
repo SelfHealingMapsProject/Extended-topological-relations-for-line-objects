@@ -10,7 +10,7 @@ All the examples below show how the functions for the extended topological relat
 
 ### Function [`relate_simple`][relate_simple_link]
 
-Function `relate_simple` transforms the result of the PostGIS function [`ST_Relate`](https://postgis.net/docs/ST_Relate.html) from the Dimensionally Extended 9 Intersection Model (DE-9IM) into the 9IM.
+Function [`relate_simple`][relate_simple_link] transforms the result of the PostGIS function [`ST_Relate`](https://postgis.net/docs/ST_Relate.html) from the Dimensionally Extended 9 Intersection Model (DE-9IM) into the 9IM.
 
 ```sql
 SELECT relate_simple(st_geomfromtext('LINESTRING(3 2, 5 2)'), geom), object_class
@@ -30,7 +30,7 @@ FROM (VALUES
 
 ### Function [`relate_line`][relate_line_link]
 
-Function ['relate_line'][relate_line_link] looks at the topological relations that a given line object has with other objects, and determines if they are related to its start point, to its end point, or both.
+Function [`relate_line`][relate_line_link] looks at the topological relations that a given line object has with other objects, and determines if they are related to its start point, to its end point, or both.
 
 ```sql
 SELECT relate_line(st_geomfromtext('LINESTRING(3 2, 5 2)'), geom), object_class
