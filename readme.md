@@ -2,6 +2,9 @@
 
 This repository contains SQL functions which enable the extended topological relations for line objects to be computed. These relations extend on the 9 Intersection Model (9IM) in order to show if the relations of the line object with other objects are symmetrical (i.e. present on both sides) or not.
 
+#### Reference:
+Majic I., Naghizade E., Winter S., & Tomko M. (2019) [Discovery of topological constraints on spatial object classes using an extended topological model](http://josis.org/index.php/josis/article/view/459). Journal of Spatial Information Science, 2019(18).
+
 ## Examples
 
 All the examples below show how the functions for the extended topological relations work on a simple scenario with bridge that crosses a river and is connected to roads on both sides.
